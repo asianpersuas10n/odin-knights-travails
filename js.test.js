@@ -13,9 +13,9 @@ test("returns message on more complex start", () => {
 });
 
 test("returns null if start is out of array bounds", () => {
-  expect(knightMoves([10, -100], [0, 0])).toBe(null);
+  expect(knightMoves([10, -100], [0, 0])).toBeNull();
 });
 
 test("returns null if end is out of array bounds", () => {
-  expect(knightMoves([3, 3], [-10, 100])).toBe(null);
+  expect(knightMoves([3, 3], [-10, 100])).toBeNull();
 });
