@@ -7,6 +7,18 @@ class Node {
 }
 
 function knightMoves(start, end) {
+  if (
+    start[0] > 7 ||
+    start[1] > 7 ||
+    end[0] > 7 ||
+    end[1] > 7 ||
+    start[0] < 0 ||
+    start[1] < 0 ||
+    end[0] < 0 ||
+    end[1] < 0
+  ) {
+    return null;
+  }
   const result = queueMove(new Node(start), [start], end);
   let message = `  => You made it in ${
     result.length - 1
@@ -67,3 +79,5 @@ const horseMoves = [
 knightMoves([0, 0], [1, 2]); //== [[0,0],[1,2]]
 knightMoves([0, 0], [3, 3]); //== [[0,0],[1,2],[3,3]]
 knightMoves([3, 3], [0, 0]); //== [[3,3],[1,2],[0,0]]
+
+module.exports = knightMoves;

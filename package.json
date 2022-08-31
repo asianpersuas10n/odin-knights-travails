@@ -1,0 +1,22 @@
+{
+  "name": "odin-knights-travails",
+  "version": "1.0.0",
+  "description": "solving the smallest amount of moves a knight needs to get to an endpoint with a graph",
+  "main": "js.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asianpersuas10n/odin-knights-travails.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asianpersuas10n/odin-knights-travails/issues"
+  },
+  "homepage": "https://github.com/asianpersuas10n/odin-knights-travails#readme",
+  "devDependencies": {
+    "jest": "^29.0.1"
+  }
+}
